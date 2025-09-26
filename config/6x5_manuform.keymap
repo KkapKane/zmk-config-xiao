@@ -9,7 +9,19 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
+&reset {
+};
+
 / {
+    macros {
+        HardReset: HardReset {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bootloader &kp NON_US_BACKSLASH>;
+            label = "HARDRESET";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
