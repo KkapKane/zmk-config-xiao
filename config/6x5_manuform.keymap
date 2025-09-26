@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -82,7 +81,7 @@
             // |     |     |      |      |      |        |                   |       |      |       |       |      |       |
 
             bindings = <
-&none      &trans        &trans        &trans                &trans                 &trans        &trans       &trans          &trans          &trans        &trans            &bootloader
+&none      &trans        &trans        &trans                &trans                 &trans        &trans       &trans          &trans          &trans        &trans            &HardReset
 &kp GRAVE  &kp N1        &kp N2        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS     &kp N6       &kp N7          &kp N8          &kp N9        &kp N0            &trans
 &kp F1     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4  &kp RET      &kp C_VOL_DN    &kp UP_ARROW    &kp C_VOL_UP  &kp LEFT_BRACKET  &trans
 &kp F7     &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp N9        &kp KP_PLUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT     &kp RBKT          &kp BSLH
@@ -94,7 +93,7 @@
 
         layer_3 {
             bindings = <
-&bl BL_DEC  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&HardReset  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
